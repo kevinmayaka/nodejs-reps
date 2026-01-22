@@ -1,0 +1,2 @@
+Hello from myFile.txt!
+One threaded archtechture.
