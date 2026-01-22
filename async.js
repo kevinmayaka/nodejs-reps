@@ -66,3 +66,17 @@
 //     .then(result => console.log('Success: ', result))
 //     .catch(error => console.error('Error: ', error.message));
 // promise methods : .then(), .catch(),finally(), promise.resolve(iterable), promise.race(iterable),promise.allsettled()
+
+// reading file with async/await
+const fs = require('fs').promises;
+async function readFile(){
+    try {
+        const data = await fs.readFile('myFile.txt', 'utf-8');
+        console.log(data);
+    }catch (error) {
+        console.error('Error handling file: ', error);
+    }
+}
+readFile()
+
+// error handling
