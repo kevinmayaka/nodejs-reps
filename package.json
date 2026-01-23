@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-practice",
+  "version": "1.0.0",
+  "description": "nodejs practice",
+  "homepage": "https://github.com/kevinmayaka/nodejs-reps#readme",
+  "bugs": {
+    "url": "https://github.com/kevinmayaka/nodejs-reps/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinmayaka/nodejs-reps.git"
+  },
+  "license": "ISC",
+  "author": "kevin mayaka",
+  "type": "commonjs",
+  "main": "async.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
