@@ -25,7 +25,7 @@
 
 // using promises/ async-await to avoid callback hell
 
-// promises 
+// promises
 // const fs = require('fs').promises;
 // console.log('1. Reading file ...')
 // fs.readFile("myFile.txt", 'utf-8')
@@ -35,9 +35,6 @@
 //     .catch(err => console.error('Error: ', err));
 
 // console.log('2. This runs before the file is read')
-
-
-
 
 // async-await
 // async function getUserData(userId){
@@ -50,7 +47,7 @@
 //     }
 // }
 
-// creating and using promises 
+// creating and using promises
 // const myPromise = new Promise((resolve, reject) => {
 //     setTimeout(() => {
 //         const success = Math.random() > 0.5;
@@ -68,15 +65,15 @@
 // promise methods : .then(), .catch(),finally(), promise.resolve(iterable), promise.race(iterable),promise.allsettled()
 
 // reading file with async/await
-const fs = require('fs').promises;
-async function readFile(){
-    try {
-        const data = await fs.readFile('myFile.txt', 'utf-8');
-        console.log(data);
-    }catch (error) {
-        console.error('Error handling file: ', error);
-    }
+const fs = require("fs").promises;
+async function readFile() {
+  try {
+    const data = await fs.readFile("myFile.txt", "utf-8");
+    console.log(data);
+  } catch (error) {
+    console.error("Error handling file: ", error);
+  }
 }
-readFile()
+readFile();
 
 // error handling

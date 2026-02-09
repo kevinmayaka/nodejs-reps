@@ -27,7 +27,7 @@
 //     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
 //     res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
 
-//     //handle preflight requests 
+//     //handle preflight requests
 //     if(method === 'OPTIONS'){
 //         res.writeHead(204);
 //         res.end();
@@ -100,7 +100,7 @@
 //             res.end();
 //         }
 //     }
-//     // 404 Not found 
+//     // 404 Not found
 //     else {
 //         res.writeHead(404, {'Content-Type': 'application/json'});
 //         res.end(JSON.stringify({error: 'Not Found'}));
@@ -143,11 +143,11 @@
 // console.log(params.get('city'))
 
 // events module
-let events = require('events');
+let events = require("events");
 let eventEmitter = new events.EventEmitter();
 
-let myEventHandler = function (){
-    console.log('I hear a screem')
-}
-eventEmitter.on('scream', myEventHandler);
-eventEmitter.emit('scream')
+let myEventHandler = function () {
+  console.log("I hear a screem");
+};
+eventEmitter.on("scream", myEventHandler);
+eventEmitter.emit("scream");

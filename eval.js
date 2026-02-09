@@ -5,7 +5,6 @@
 // perks of the runtime env
 // great for prototyping and agile dev, superfast and highly scalable. JS everwhere leading to clean code
 
-
 //async example, os.totalmem
 // fs
 // const fs = require('fs');
